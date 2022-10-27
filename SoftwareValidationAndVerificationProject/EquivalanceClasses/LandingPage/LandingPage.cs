@@ -26,9 +26,11 @@ namespace SoftwareValidationAndVerificationProject.EquivalanceClasses.LandingPag
             }
             catch (Exception ex)
             {
-
-                Configure.Quit();
                 Assert.Fail();
+            }
+            finally 
+            {
+                Configure.Quit();
             }
             
         }
